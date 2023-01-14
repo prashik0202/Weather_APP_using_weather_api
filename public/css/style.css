@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+*{
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(129, 217, 255);
+}
+
+.container{
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    /* margin-top: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.weather{
+    max-width: 700px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: rgb(45, 45, 45);
+    font-size: xx-large;
+}
+
+h2{
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+}
+
+input{
+    width: 200x;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+.btn{
+    padding: 10px;
+    max-width: 80px;
+    background-color: rgb(129, 217, 255);
+    color:rgb(0, 44, 88);
+}
+
+.btn:hover{
+    background-color:rgb(129, 217, 255);
+    color: black;
+    border-color: rgb(129,217,255);
+}
