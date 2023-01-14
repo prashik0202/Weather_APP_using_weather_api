@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS styling -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>Weather application</title>
-</head>
+<%- include('./partials/header')-%>
 <body>
     <div class="weather">
-        <span>In Mumbai Temperature is 27.3 Degree C</span>
+        <% if(weather !== null){%>
+        <span><%= weather %></span>
+        <% }%>
+        <% if(error !== null){%>
+            <span><%= error %></span>
+        <% } %>
     </div>
     <div class="container">
         <h2>Wheather App</h2>
-        <form action="" method="post">
-            <input type="text" placeholder="Enter city/country name">
-            <button class="btn" >Search</button>    
+        <form action="/" method="post">
+            <input type="text" placeholder="Enter city/country name" name="city" required>
+            <button class="btn" type="submit">Search</button>    
         </form>
     </div>
 </body>

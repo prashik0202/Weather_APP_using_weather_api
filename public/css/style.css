@@ -44,6 +44,7 @@ form{
 
 input{
     width: 200x;
+    border-radius: 5px;
 }
 input[type=text]{
     width: 100%;
@@ -63,4 +64,11 @@ input[type=text]{
     background-color:rgb(129, 217, 255);
     color: black;
     border-color: rgb(129,217,255);
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
