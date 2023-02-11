@@ -35,8 +35,14 @@ app.post('/',(req,res) => {
             if(weather.main == undefined){
                 res.render('index', {weather : null , error : 'Error, please try again' });
             }else{
+                var temp = weather.main.temp;
+                var pressure = weather.main.pressure;
+                var humidity = weather.main.humidity;
+                var visibility = weather.visibility;
+                var wind_speed = weather.wind.speed;
+
                 let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}`;
-                res.render('index',{ weather : weatherText , error : null });
+                res.render('index',{ weather : { temp , pressure , humidity , visibility , wind_speed} , error : null });
             }
         }
     });
